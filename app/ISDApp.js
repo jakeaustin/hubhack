@@ -4,8 +4,8 @@
   app.config(function($routeProvider){
     $routeProvider
       .when('/', {
-        controller: 'indexController',
-        templateUrl: 'app/views/index.html'
+        controller: 'stepController',
+        templateUrl: 'app/views/businessPlan.html'
       })
       .otherwise({ redirectTo: '/' });
   });

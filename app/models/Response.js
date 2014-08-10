@@ -1,4 +1,5 @@
-var AppResponses = (function(that){
+var AppResponses = (function(){
+  var that = {};
   that.Response = Response;
 
   function Response(){
@@ -39,4 +40,4 @@ var AppResponses = (function(that){
   };
 
   return that;
-})(AppResponses);
+})();

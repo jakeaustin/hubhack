@@ -1,4 +1,5 @@
-var AppSteps = (function(that){
+var AppSteps = (function(){
+  var that = {};
   that.Step = Step;
 
   function Step(){
@@ -36,10 +37,13 @@ var AppSteps = (function(that){
       return this.get('responses');
     },
 
-    response : function(response){
-
+    execute : function(response){
+      if(typeof response !== 'undefined'){
+        return response.getNextStep();
+      }
+      return undefined;
     }
   };
 
   return that;
-})(AppSteps);
+})();
