@@ -10,7 +10,7 @@
       $scope.continueButtonText = step.continueButtonText();
     }
 
-    init(AppSteps.BusinessPlanStep);
+    init(AppSteps.LandingPageStep);
 
     $scope.execute = function(response){
       $scope.nextStep = $scope.step.execute(response);
@@ -19,6 +19,9 @@
     };
 
     $scope.continue = function(){
+      if ($scope.responses.length === 1) {
+        $scope.nextStep = $scope.step.execute($scope.responses[0]);
+      }
       init($scope.nextStep);
       $(':radio').prop('checked', false);
     };

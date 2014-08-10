@@ -7,13 +7,13 @@ var AppSteps = (function(that){
   that.ExplainPageStep.question('We have a few questions which will help us determine what you will be needing');
 
   that.RoadMapStep = new that.Step();
-  that.RoadMapStep.question = ('Here is your road map, where you can go back to earlier questions if you want to change your answers');
+  that.RoadMapStep.question('Here is your road map, where you can go back to earlier questions if you want to change your answers');
 
   that.FollowUpQuestionsStep = new that.Step();
   that.FollowUpQuestionsStep.question('Some questions may have followup questions - you will see the followups get added to the roadmap if they come up');
 
   that.ResultPreviewStep = new that.Step();
-  that.ResultPreviewStep.question = ('These are your results. We will give you a list of the permits you are going to need, a checklist of things to do, and any resources we think will be helpful');
+  that.ResultPreviewStep.question('These are your results. We will give you a list of the permits you are going to need, a checklist of things to do, and any resources we think will be helpful');
 
   that.LiabilityStep = new that.Step();
   that.LiabilityStep.question('This process is just a first step - if you have any questions about what comes next, set up an appointment with an ISD official here: http://www.cityofboston.gov/contact/?id=98');

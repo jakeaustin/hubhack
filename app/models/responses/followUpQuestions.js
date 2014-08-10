@@ -3,7 +3,7 @@ var AppResponses = (function(that, steps){
   that.SawFollowUp.setNextStep(steps.ResultPreviewStep);
 
   steps.FollowUpQuestionsStep.responses([
-    that.SawFollowup
+    that.SawFollowUp
     ]);
 
   return that;
