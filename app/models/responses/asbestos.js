@@ -6,14 +6,14 @@ var AppResponses = (function(that, steps){
     {
       name: 'Asbestos Removal Permit',
       dept: 'Boston Fire Department (BFD)',
-      checklist: '',
-      resource: ''
+      checklist: 'Acquire permit',
+      resource: 'http://www.cityofboston.gov/Images_Documents/Asbestos_tcm3-3973.pdf'
     },
     {
       name: 'Erecting a Tent/Temporary Structure',
       dept: 'Boston Fire Department (BFD)',
-      checklist: '',
-      resource: ''
+      checklist: 'Acquire permit',
+      resource: 'http://www.cityofboston.gov/Images_Documents/Erecting%20a%20Tent%20or%20Temp%20Structure%20Application_tcm3-4012.pdf'
     }
     ]);
 
@@ -23,7 +23,7 @@ var AppResponses = (function(that, steps){
   that.UnknownAsbestos = new that.Response();
   that.UnknownAsbestos.responseText("You've answered I don't know .  Please see the information below. Any work involving cutting into asbestos should be performed by a licensed professional contractor who will need to obtain an Asbestos Removal Permit from the Boston Fire Department (BFD).    If you are not sure if your planned work qualifies, you should contact your contractor. For more information about the State's requirements regarding asbestos, see:   http://www.mass.gov/dep/air/asbguid.htm .");
   that.UnknownAsbestos.setNextStep(steps.FireAlarmStep);
-  that.HasAsbestos.requiredPermits([
+  that.UnknownAsbestos.requiredPermits([
     {
       name: 'Asbestos Removal Permit',
       dept: 'Boston Fire Department (BFD)',

@@ -16,7 +16,7 @@
     }
 
     function setResultset(response) {
-      if(response.requiredPermits().length > 0) {
+      if(typeof response.requiredPermits !== 'undefined' && response.requiredPermits().length > 0) {
         response.requiredPermits.forEach(function(e){
           var permit = findPermit(e.name);
           if(typeof permit === 'undefined') {
