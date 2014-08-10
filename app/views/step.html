@@ -19,7 +19,13 @@
   <div class="resultset-header">My Results </div>
   <div x-ng-show="resultset.length">
     <ul x-ng-repeat="permit in resultset">
-      <li>{{permit.name}}}</li>
+      <li>{{ permit.name | uppercase }}</li>
+      <ul x-ng-repeat="item in permit.checklist">
+        <li>{{ item }}</li>
+      </ul>
+      <ul x-ng-repeat="resource in permit.resources">
+        <li>{{ resource }}</li>
+      </ul>
     </ul>
   </div>
 </div>
