@@ -2,10 +2,10 @@
   var StepController = function($scope){
     function init(step){
       $scope.resultset = [];
-      reset();
+      reset(step);
     }
 
-    function reset(){
+    function reset(step){
       $scope.step = step;
       $scope.question = step.question();
       $scope.responses = step.responses();

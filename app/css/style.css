@@ -1,27 +1,78 @@
-.hidden {
-  display: none;
+@font-face {
+    font-family: 'merriweather';
+    src: url('/fonts/merriweather-regular-webfont.eot');
+    src: url('/fonts/merriweather-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/merriweather-regular-webfont.woff') format('woff'),
+         url('/fonts/merriweather-regular-webfont.ttf') format('truetype'),
+         url('/fonts/merriweather-regular-webfont.svg#merriweatherregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'proximanova';
+    src: url('/fonts/proximanova-regular-webfont.eot');
+    src: url('/fonts/proximanova-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/proximanova-regular-webfont.woff') format('woff'),
+         url('/fonts/proximanova-regular-webfont.ttf') format('truetype'),
+         url('/fonts/proximanova-regular-webfont.svg#proximanovabold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'proximanova';
+    src: url('/fonts/proximanova-bold-webfont.eot');
+    src: url('/fonts/proximanova-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/proximanova-bold-webfont.woff') format('woff'),
+         url('/fonts/proximanova-bold-webfont.ttf') format('truetype'),
+         url('/fonts/proximanova-bold-webfont.svg#proximanovabold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'orator';
+    src: url('/fonts/OratorStd_0.eot');
+    src: url('/fonts/OratorStd_0.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/OratorStd_0.woff') format('woff'),
+         url('/fonts/OratorStd_0.ttf') format('truetype'),
+         url('/fonts/OratorStd_0.svg#OratorStd_0') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/*----- General Styles ---------------*/
+
+body {
+  color: #333;
+  font-family: 'merriweather', Georgia, serif;
+  font-size: 100% !important;
+  font-weight: normal;
+}
+
+button {
+  margin-top: 10px;
+  padding: 3px 10px;
 }
 
 #roadmap {
-  border: 5px solid black;
-  border-radius: 20px;
   width: 80%;
   height: 100px;
   margin-left: 10%;
 }
 
-#question-box {
-  height: 70%;
-  width: 45%;
-  border: 2px solid green;
-  border-radius: 20px;
-  float: left;
+.question {
+}
+
+.response-text {
+  padding-top: 10px;
+}
+
+.resultset-header {
+  border-bottom: 1px solid #999;
   text-align: center;
 }
 
-#result-set {
-  height: 70%;
-  width: 45%;
-  float: right;
-  border: 2px solid blue;
+.resultset {
 }
