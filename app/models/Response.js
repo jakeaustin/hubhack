@@ -30,6 +30,13 @@ var AppResponses = (function(){
       return this.get('responseText');
     },
 
+    requiredPermits : function(array){
+      if(typeof array !== 'undefined') {
+        return this.set('requiredPermits', array);
+      }
+      return this.get('requiredPermits');
+    },
+
     setNextStep : function(nextStep){
       this.set('nextStep', nextStep);
     },
