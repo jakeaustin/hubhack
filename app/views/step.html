@@ -4,4 +4,9 @@
   <input x-ng-click="execute(responses[1])" type="radio" name="no" value="0">No.
   <input x-ng-click="execute(responses[2])" type="radio" name="idk" value="0">I don't know.
 </div>
-<div>{{ responseText }}</div>
+<div x-ng-show="showResponse">
+  <div>{{ responseText }}</div>
+  <div>
+    <button x-ng-click="continue()">{{ continueButtonText }}</button>
+  </div>
+</div>

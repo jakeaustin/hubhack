@@ -3,7 +3,8 @@ var AppSteps = (function(){
   that.Step = Step;
 
   function Step(){
-    var _data = {};
+    var _data = {},
+    _continueBtnText = 'Next';
 
     this.get = function(prop){
       if(typeof prop !== 'undefined') {
@@ -19,6 +20,13 @@ var AppSteps = (function(){
         return oldValue;
       }
       return undefined;
+    };
+
+    this.continueButtonText = function(value){
+      if(typeof value !== 'undefined') {
+        _continueBtnText = value;
+      }
+      return _continueBtnText;
     };
   }
 
