@@ -1,3 +1,27 @@
 .hidden {
   display: none;
 }
+
+#roadmap {
+  border: 5px solid black;
+  border-radius: 20px;
+  width: 80%;
+  height: 100px;
+  margin-left: 10%;
+}
+
+#question-box {
+  height: 70%;
+  width: 45%;
+  border: 2px solid green;
+  border-radius: 20px;
+  float: left;
+  text-align: center;
+}
+
+#result-set {
+  height: 70%;
+  width: 45%;
+  float: right;
+  border: 2px solid blue;
+}
