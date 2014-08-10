@@ -16,11 +16,19 @@
     }
 
     function setResultset(response) {
+<<<<<<< Updated upstream
       if(response.requiredPermits().length > 0) {
         response.requiredPermits.forEach(function(e){
+=======
+      var rp = response.requiredPermits();
+      if(typeof rp !== 'undefined' && rp.length > 0) {
+        for(var j = 0; j < rp.length; j++){
+          var e = rp[j];
+>>>>>>> Stashed changes
           var permit = findPermit(e.name);
           if(typeof permit === 'undefined') {
             permit = {name: e.name, checklist: [], resources: []};
+            $scope.resultset.push(permit);
           }
           if(e.checklist !== '') {
             permit.checklist.push(e.checklist);
@@ -28,7 +36,7 @@
           if(e.resource !== '') {
             permit.resources.push(e.resource);
           }
-        });
+        }
       }
     }
 
